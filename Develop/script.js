@@ -23,8 +23,24 @@ while (passwordLength < 8 || passwordLength > 128) {
 
 upperCase1 = confirm("Click OK to include upper case letters in your password.");
 lowerCase1 = confirm("Click OK to include lower case letters in your password.");
-numbers1 = confirm("Click OK to includde numbers in your password.");
+numbers1 = confirm("Click OK to include numbers in your password.");
 specials1 = confirm("Click OK to include special characters in your password.");
+
+if (upperCase1 === true) {
+  (newPassword.push(upperCase));
+}
+
+if (lowerCase1 === true) {
+  (newPassword.push(lowerCase));
+}
+
+if (numbers1 === true) {
+  (newPassword.push(numbers));
+}
+
+if (specials1 === true) {
+  (newPassword.push(specials));
+}
 
 
 
