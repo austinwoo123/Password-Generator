@@ -1,5 +1,5 @@
-// // Assignment Code
-var generateBtn = document.querySelector("#generate");
+// // // Assignment Code
+// var generateBtn = document.querySelector("#generate");
 //Possible strings//
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -12,7 +12,7 @@ var specials = "!@#$%^&*_?";
 //console.log(specials)
 
 // new variable to track the confirms from the prompts//
-var newPassword = [];
+var setPassword = [];
 
 //Prompts and confirms//
 var passwordLength = parseInt(prompt("How many characters do you want in your password?"));
@@ -27,34 +27,34 @@ numbers1 = confirm("Click OK to include numbers in your password.");
 specials1 = confirm("Click OK to include special characters in your password.");
 
 if (upperCase1 === true) {
-  (newPassword.push(upperCase));
+  (setPassword.push(upperCase));
 }
 
 if (lowerCase1 === true) {
-  (newPassword.push(lowerCase));
+  (setPassword.push(lowerCase));
 }
 
 if (numbers1 === true) {
-  (newPassword.push(numbers));
+  (setPassword.push(numbers));
 }
 
 if (specials1 === true) {
-  (newPassword.push(specials));
+  (setPassword.push(specials));
 }
 
-var password1 = newPassword.join("");
+var newPassword = setPassword.join("");
 
 var finalPassword = "";
 
 for (var i = 0; i < passwordLength; i++) {
-  var generateP = password1.charAt(Math.floor(Math.random() * password1.length));
+  var generateP = newPassword.charAt(Math.floor(Math.random() * newPassword.length));
   finalPassword = finalPassword.concat(generateP);
 }
 
 alert("Click on Okay to recieve your new password");
 
 function writePassword() {
-  document.getElementById("password").textContent = ps;
+  document.getElementById("password-text").textContent = finalPassword;
 
 }
 
@@ -63,17 +63,6 @@ function writePassword() {
 
 
 
-
-
-
-// Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
 
 // // Add event listener to generate button
 // generateBtn.addEventListener("click", writePassword);

@@ -14,6 +14,10 @@ Our assignment was to create an application that would help the user generate a 
 - BootStrap CSS Framework- Quickly design and customize responsive mobile-first sites using front-end open source toolkit, featuring SASS variables and mixins, responsive grid system, and prebuilt components.
 - JavaScript- Programming language that is used to prompt the user and generate a random password based on the user's inputs. 
 
+## Screenshot
+![Alt Text](https://raw.githubusercontent.com/austinwoo123/Password-Generator/main/Assets/03-javascript-homework-demo.png)
+
+
 ## Code Snippet
 ```
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -33,11 +37,11 @@ This code shows how I took the array and joined it with the strings and put it t
 ```
 ## Deployed Link
 
-* [https://github.com/austinwoo123/Responsive-Portfolio]
+* [https://austinwoo123.github.io/Password-Generator/]
 
 ## Authors
 Austin Woo
-- [Link to Portfolio Site](https://austinwoo123.github.io/Responsive-Portfolio/.)
+- [Link to Portfolio Site](https://github.com/austinwoo123/Password-Generator)
 - [Link to Github](https://github.com/austinwoo123)
 - [Link to LinkedIn](https://www.linkedin.com/in/awoo95/)
 
