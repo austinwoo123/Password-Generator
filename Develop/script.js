@@ -1,4 +1,4 @@
-// Assignment Code
+// // Assignment Code
 var generateBtn = document.querySelector("#generate");
 //Possible strings//
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -42,6 +42,24 @@ if (specials1 === true) {
   (newPassword.push(specials));
 }
 
+var password1 = newPassword.join("");
+
+var finalPassword = "";
+
+for (var i = 0; i < passwordLength; i++) {
+  var generateP = password1.charAt(Math.floor(Math.random() * password1.length));
+  finalPassword = finalPassword.concat(generateP);
+}
+
+alert("Click on Okay to recieve your new password");
+
+function writePassword() {
+  document.getElementById("password").textContent = ps;
+
+}
+
+
+
 
 
 
@@ -49,13 +67,13 @@ if (specials1 === true) {
 
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+//   passwordText.value = password;
 
-}
+// }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
