@@ -1,6 +1,7 @@
-// // // Assignment Code
-// var generateBtn = document.querySelector("#generate");
-//Possible strings//
+// // Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+// Possible strings//
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789";
@@ -54,8 +55,10 @@ for (var i = 0; i < passwordLength; i++) {
 alert("Click on Okay to recieve your new password");
 
 function writePassword() {
-  document.getElementById("password-text").textContent = finalPassword;
 
+
+  alert("Your password has now been copied to the clipboard");
+  // console.log("Final password is ", finalPassword)
 }
 
 
@@ -64,5 +67,5 @@ function writePassword() {
 
 
 
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
