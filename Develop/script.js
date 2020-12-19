@@ -17,14 +17,10 @@ var newPassword = [];
 //Prompts and confirms//
 var passwordLength = parseInt(prompt("How many characters do you want in your password?"));
 
-if (passwordLength < 8) {
-  alert("Your password needs to have at least 8-128 characters.");
-  prompt("How many characters do you want in your password?");
-
+while (passwordLength < 8 || passwordLength > 128) {
+  passwordLength = parseInt(prompt("How many characters do you want in your password?"));
 }
-else if (passwordLength > 8); {
 
-}
 
 
 // Write password to the #password input
