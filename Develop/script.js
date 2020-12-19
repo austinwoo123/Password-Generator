@@ -21,6 +21,15 @@ while (passwordLength < 8 || passwordLength > 128) {
   passwordLength = parseInt(prompt("How many characters do you want in your password?"));
 }
 
+upperCase1 = confirm("Click OK to include upper case letters in your password.");
+lowerCase1 = confirm("Click OK to include lower case letters in your password.");
+numbers1 = confirm("Click OK to includde numbers in your password.");
+specials1 = confirm("Click OK to include special characters in your password.");
+
+
+
+
+
 
 
 // Write password to the #password input
