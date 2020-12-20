@@ -32,9 +32,9 @@ for (var i = 0; i < passwordLength; i++) {
   var generateP = password1.charAt(Math.floor(Math.random() * password1.length));
   finalPassword = finalPassword.concat(generateP);
 }
-
-This code shows how I took the array and joined it with the strings and put it through a for loop. I used Math.Floor and math.random to generate a random new password.  
 ```
+This code shows how I took the array and joined it with the strings and put it through a for loop. I used Math.Floor and math.random to generate a random new password.  
+
 ## Deployed Link
 
 * [https://austinwoo123.github.io/Password-Generator/]
