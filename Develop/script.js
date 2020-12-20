@@ -42,11 +42,11 @@ if (numbers1 === true) {
 if (specials1 === true) {
   (setPassword.push(specials));
 }
-
+// join arry with string //
 var newPassword = setPassword.join("");
 
 var finalPassword = "";
-
+// for loop //
 for (var i = 0; i < passwordLength; i++) {
   var generateP = newPassword.charAt(Math.floor(Math.random() * newPassword.length));
   finalPassword = finalPassword.concat(generateP);
@@ -56,8 +56,6 @@ alert("Click on Okay to recieve your new password");
 
 function writePassword() {
 
-
-  alert("Your password has now been copied to the clipboard");
   // console.log("Final password is ", finalPassword)
 }
 
